@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1096150458113",
+    "project_id": "drive-gallery-d2a58",
+    "storage_bucket": "drive-gallery-d2a58.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096150458113:android:33207f27e3545d0701c500",
+        "android_client_info": {
+          "package_name": "com.example.gallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096150458113-qopf4vpmq7nat2rl8g6ji9a2452qjg52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaOgVIXoz1Q_1DTpAaGZ2OAhzcMqOslYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096150458113-qopf4vpmq7nat2rl8g6ji9a2452qjg52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
