@@ -5,19 +5,19 @@ class AboutUsScreen extends StatelessWidget {
 
   static const _team = [
     {
-      'name': 'Alice Nguyen',
+      'name': 'ເພັດສະໄໝ ລໍອານຸພາບ',
       'imageUrl': 'https://via.placeholder.com/150/FFB6C1/000000?text=Alice',
-      'role': 'Lead Developer',
+      'role': 'Project Manager',
     },
     {
-      'name': 'Bob Chan',
+      'name': 'ອູ່ໄລພອນ ບຸນຍາວົງ',
       'imageUrl': 'https://via.placeholder.com/150/87CEFA/000000?text=Bob',
-      'role': 'Backend Engineer',
+      'role': 'UI/UX Designer',
     },
     {
-      'name': 'Charlie Lee',
+      'name': 'ວິລະເທບ ສີສຸວົງ',
       'imageUrl': 'https://via.placeholder.com/150/90EE90/000000?text=Charlie',
-      'role': 'UI/UX Designer',
+      'role': 'Developer',
     },
   ];
 
