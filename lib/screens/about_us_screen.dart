@@ -6,17 +6,17 @@ class AboutUsScreen extends StatelessWidget {
   static const _team = [
     {
       'name': 'ເພັດສະໄໝ ລໍອານຸພາບ',
-      'imageUrl': 'https://via.placeholder.com/150/FFB6C1/000000?text=Alice',
+      'imageUrl': 'https://lh3.googleusercontent.com/d/1v00v0eXOHr14Ilg18V9jQsGdSy9stLCc',
       'role': 'Project Manager',
     },
     {
       'name': 'ອູ່ໄລພອນ ບຸນຍາວົງ',
-      'imageUrl': 'https://via.placeholder.com/150/87CEFA/000000?text=Bob',
+      'imageUrl': 'https://lh3.googleusercontent.com/d/1McStf0t8J1d7eHsm4beZnSQw6iGSQWLT',
       'role': 'UI/UX Designer',
     },
     {
       'name': 'ວິລະເທບ ສີສຸວົງ',
-      'imageUrl': 'https://via.placeholder.com/150/90EE90/000000?text=Charlie',
+      'imageUrl': 'https://lh3.googleusercontent.com/d/1diTWdFF--s4Nliv2ND2UcNHwYxh0ag3T',
       'role': 'Developer',
     },
   ];

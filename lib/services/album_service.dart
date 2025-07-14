@@ -6,7 +6,6 @@ class AlbumService extends ChangeNotifier {
   String? _nextPageToken;
   bool _isLoading = false;
   String? _error;
-  String? _lastImageId;
 
   AlbumService({Dio? dio})
     : _dio =
@@ -23,39 +22,6 @@ class AlbumService extends ChangeNotifier {
   bool get isLoading => _isLoading;
   String? get error => _error;
   String? get nextPageToken => _nextPageToken;
-  String? get lastImageId => _lastImageId;
-
-  Future<void> fetchLatestImageId({ required String folderId }) async {
-  final token = await refreshAccessToken();
-  try {
-    final resp = await _dio.get(
-      '/drive/v3/files',
-      queryParameters: {
-        'q': "'$folderId' in parents and trashed=false",
-        'pageSize': 1,
-        'orderBy': 'createdTime desc',
-        // only fetch the `id` field
-        'fields': 'files(id)',
-      },
-      options: Options(
-        headers: {'Authorization': 'Bearer $token'},
-        validateStatus: (s) => s != null && s < 500,
-      ),
-    );
-
-    if (resp.statusCode == 200) {
-      final files = resp.data['files'] as List<dynamic>;
-      _lastImageId = files.isNotEmpty ? files.first['id'] as String : null;
-    } else {
-      _lastImageId = null;
-    }
-  } catch (_) {
-    _lastImageId = null;
-  }
-
-  // notify your UI if you want it to rebuild
-  notifyListeners();
-}
   Future<void> fetchAlbum({
     required String folderId,
     int pageSize = 100,
